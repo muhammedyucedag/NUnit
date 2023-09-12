@@ -1,5 +1,6 @@
 using System.ComponentModel;
 using JobApplication.Services;
+using JobApplicationlibrary.Models;
 
 namespace JobApplication;
 
@@ -19,6 +20,8 @@ public class AppliactaionEvaluator
     {
         if (form.Applicant.Age < minAge)
             return ApplicationResult.AutoRejected;
+
+        _identityValidator.ValidationMode = form.Applicant.Age > 50 ? ValidationMode.Detailed : ValidationMode.Quick;
 
         if (_identityValidator.CountryDataProvider.CountryData.Country != "TURKEY")
             return ApplicationResult.TransferredToCTO;

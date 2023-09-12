@@ -105,7 +105,6 @@ public class ApplicationEvaluateUnitTest
    [Test]
    public void Application_WithOfficeLocation_TransferredToCTO()
    {
-      // %75 oranında benzerlik yakaladık ve otomatik bir şekilde kabul ettik
       
       // Arrange
       var mockValidator = new Mock<IIdentityValidator>(); // böyle bir interface varmış gibi (fake class)
@@ -122,5 +121,26 @@ public class ApplicationEvaluateUnitTest
       
       // Assert
       Assert.That(appResult, Is.EqualTo(ApplicationResult.TransferredToCTO));
+   }
+
+   [Test]
+   public void Application_WithOver50_ValidationModeToDetailed()
+   {
+      // Arrange
+      var mockValidator = new Mock<IIdentityValidator>(); // böyle bir interface varmış gibi (fake class)
+      mockValidator.SetupAllProperties();
+      mockValidator.Setup(i => i.CountryDataProvider.CountryData.Country).Returns("SPAIN");
+      
+      var evaluator = new AppliactaionEvaluator(mockValidator.Object);
+      var form = new JobApplicationlibrary.Models.JobApplication
+      {
+         Applicant = new Applicant{ Age = 51}
+      };
+      
+      // Action
+      var appResult = evaluator.Evaluate(form);
+      
+      // Assert 
+      Assert.That(mockValidator.Object.ValidationMode, Is.EqualTo(ValidationMode.Detailed));
    }
 }
