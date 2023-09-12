@@ -6,5 +6,6 @@
     &lt;TestId&gt;NUnit3x::79186718-07A5-4ABB-A636-C9EC2F1D91CF::net7.0::JobApplicationLibraryUnitTest.ApplicationEvaluateUnitTest.Application_WithTechStackOver75P_TransferredToAutoAccepted&lt;/TestId&gt;
     &lt;TestId&gt;NUnit3x::79186718-07A5-4ABB-A636-C9EC2F1D91CF::net7.0::JobApplicationLibraryUnitTest.ApplicationEvaluateUnitTest.Application_WithTechStackOver75P_TransferredToAutoReject&lt;/TestId&gt;
     &lt;TestId&gt;NUnit3x::79186718-07A5-4ABB-A636-C9EC2F1D91CF::net7.0::JobApplicationLibraryUnitTest.ApplicationEvaluateUnitTest.Application_WithInValidIdentityNumber_TransferredToAutoReject&lt;/TestId&gt;
+    &lt;TestId&gt;NUnit3x::79186718-07A5-4ABB-A636-C9EC2F1D91CF::net7.0::JobApplicationLibraryUnitTest.ApplicationEvaluateUnitTest.Application_WithInValidIdentityNumber_TransferredToHR&lt;/TestId&gt;
   &lt;/TestAncestor&gt;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>

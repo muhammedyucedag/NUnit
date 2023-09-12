@@ -20,6 +20,7 @@ public class AppliactaionEvaluator
         if (form.Applicant.Age < minAge)
             return ApplicationResult.AutoRejected;
 
+        var connectionSucceed = _identityValidator.CheckConnectionToRemoteServer();
         var validIdentity = _identityValidator.IsValid(form.Applicant.IdentityNumber);
         if (!validIdentity)
             return ApplicationResult.TransferredToHR;

@@ -39,7 +39,7 @@ public class ApplicationEvaluateUnitTest
       var evaluator = new AppliactaionEvaluator(mockValidator.Object);
       var form = new JobApplicationlibrary.Models.JobApplication
       {
-         Applicant = new Applicant{ Age = 19, IdentityNumber = ""},
+         Applicant = new Applicant{ Age = 19},
          TechStackList = new List<string> {""}
       };
       
@@ -51,7 +51,7 @@ public class ApplicationEvaluateUnitTest
    }
    
    [Test]
-   public void Application_WithTechStackOver75P_TransferredToAutoReject()
+   public void Application_WithTechStackOver75P_TransferredToAutoAccepted()
    {
       // %75 oranında benzerlik yakaladık ve otomatik bir şekilde kabul ettik
       
@@ -75,7 +75,7 @@ public class ApplicationEvaluateUnitTest
    }
    
    [Test]
-   public void Application_WithInValidIdentityNumber_TransferredToAutoReject()
+   public void Application_WithInValidIdentityNumber_TransferredToHR()
    {
       // %75 oranında benzerlik yakaladık ve otomatik bir şekilde kabul ettik
       
