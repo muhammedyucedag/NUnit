@@ -1,0 +1,12 @@
+/Users/muhammetyucedag/Desktop/Project/NUnit/JobApplicationlibrary/bin/Debug/net7.0/JobApplicationlibrary.deps.json
+/Users/muhammetyucedag/Desktop/Project/NUnit/JobApplicationlibrary/bin/Debug/net7.0/JobApplicationlibrary.dll
+/Users/muhammetyucedag/Desktop/Project/NUnit/JobApplicationlibrary/bin/Debug/net7.0/JobApplicationlibrary.pdb
+/Users/muhammetyucedag/Desktop/Project/NUnit/JobApplicationlibrary/obj/Debug/net7.0/JobApplicationlibrary.csproj.AssemblyReference.cache
+/Users/muhammetyucedag/Desktop/Project/NUnit/JobApplicationlibrary/obj/Debug/net7.0/JobApplicationlibrary.GeneratedMSBuildEditorConfig.editorconfig
+/Users/muhammetyucedag/Desktop/Project/NUnit/JobApplicationlibrary/obj/Debug/net7.0/JobApplicationlibrary.AssemblyInfoInputs.cache
+/Users/muhammetyucedag/Desktop/Project/NUnit/JobApplicationlibrary/obj/Debug/net7.0/JobApplicationlibrary.AssemblyInfo.cs
+/Users/muhammetyucedag/Desktop/Project/NUnit/JobApplicationlibrary/obj/Debug/net7.0/JobApplicationlibrary.csproj.CoreCompileInputs.cache
+/Users/muhammetyucedag/Desktop/Project/NUnit/JobApplicationlibrary/obj/Debug/net7.0/JobApplicationlibrary.dll
+/Users/muhammetyucedag/Desktop/Project/NUnit/JobApplicationlibrary/obj/Debug/net7.0/refint/JobApplicationlibrary.dll
+/Users/muhammetyucedag/Desktop/Project/NUnit/JobApplicationlibrary/obj/Debug/net7.0/JobApplicationlibrary.pdb
+/Users/muhammetyucedag/Desktop/Project/NUnit/JobApplicationlibrary/obj/Debug/net7.0/ref/JobApplicationlibrary.dll
