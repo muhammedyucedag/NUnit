@@ -9,5 +9,8 @@
     &lt;TestId&gt;NUnit3x::79186718-07A5-4ABB-A636-C9EC2F1D91CF::net7.0::JobApplicationLibraryUnitTest.ApplicationEvaluateUnitTest.Application_WithInValidIdentityNumber_TransferredToHR&lt;/TestId&gt;
     &lt;TestId&gt;NUnit3x::79186718-07A5-4ABB-A636-C9EC2F1D91CF::net7.0::JobApplicationLibraryUnitTest.ApplicationEvaluateUnitTest.Application_WithOfficeLocation_TransferredToCTO&lt;/TestId&gt;
     &lt;TestId&gt;NUnit3x::79186718-07A5-4ABB-A636-C9EC2F1D91CF::net7.0::JobApplicationLibraryUnitTest.ApplicationEvaluateUnitTest.Application_WithOver50_ValidationModeToDetailed&lt;/TestId&gt;
+    &lt;TestId&gt;NUnit3x::79186718-07A5-4ABB-A636-C9EC2F1D91CF::net7.0::JobApplicationLibraryUnitTest.ApplicationEvaluateUnitTest.Application_WithNullApplicatant_ThrowsArgumentNullException&lt;/TestId&gt;
+    &lt;TestId&gt;NUnit3x::79186718-07A5-4ABB-A636-C9EC2F1D91CF::net7.0::JobApplicationLibraryUnitTest.ApplicationEvaluateUnitTest.Application_WithDefaultValue_IsValidCalled&lt;/TestId&gt;
+    &lt;TestId&gt;NUnit3x::79186718-07A5-4ABB-A636-C9EC2F1D91CF::net7.0::JobApplicationLibraryUnitTest.ApplicationEvaluateUnitTest.Application_WithYoungAge_IsValidNeverCalled&lt;/TestId&gt;
   &lt;/TestAncestor&gt;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>

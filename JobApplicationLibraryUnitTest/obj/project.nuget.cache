@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "wWollEu7QQ/fyHAFqbDpxJbccx3ZcXQpbG6vlDT/f6Asdlrq5pmzbzqjaKdQ72GCkTO1kkO5GHgCqc+7dWTEOQ==",
+  "dgSpecHash": "os+NxP17ks5eMoQTnyNik84VLRLR6U2XbIzAkqJ24LFNAPf8gqCV6bIvJ5G78IGhPXpkMKAkzZvWnAi89Z8Q5g==",
   "success": true,
   "projectFilePath": "/Users/muhammetyucedag/Desktop/Project/NUnit/JobApplicationLibraryUnitTest/JobApplicationLibraryUnitTest.csproj",
   "expectedPackageFiles": [
     "/Users/muhammetyucedag/.nuget/packages/castle.core/5.1.1/castle.core.5.1.1.nupkg.sha512",
     "/Users/muhammetyucedag/.nuget/packages/coverlet.collector/3.2.0/coverlet.collector.3.2.0.nupkg.sha512",
+    "/Users/muhammetyucedag/.nuget/packages/fluentassertions/7.0.0-alpha.1/fluentassertions.7.0.0-alpha.1.nupkg.sha512",
     "/Users/muhammetyucedag/.nuget/packages/microsoft.codecoverage/17.5.0/microsoft.codecoverage.17.5.0.nupkg.sha512",
     "/Users/muhammetyucedag/.nuget/packages/microsoft.net.test.sdk/17.5.0/microsoft.net.test.sdk.17.5.0.nupkg.sha512",
     "/Users/muhammetyucedag/.nuget/packages/microsoft.netcore.platforms/1.1.0/microsoft.netcore.platforms.1.1.0.nupkg.sha512",
@@ -18,8 +19,10 @@
     "/Users/muhammetyucedag/.nuget/packages/nunit/3.13.3/nunit.3.13.3.nupkg.sha512",
     "/Users/muhammetyucedag/.nuget/packages/nunit.analyzers/3.6.1/nunit.analyzers.3.6.1.nupkg.sha512",
     "/Users/muhammetyucedag/.nuget/packages/nunit3testadapter/4.4.2/nunit3testadapter.4.4.2.nupkg.sha512",
+    "/Users/muhammetyucedag/.nuget/packages/system.configuration.configurationmanager/4.4.0/system.configuration.configurationmanager.4.4.0.nupkg.sha512",
     "/Users/muhammetyucedag/.nuget/packages/system.diagnostics.eventlog/6.0.0/system.diagnostics.eventlog.6.0.0.nupkg.sha512",
-    "/Users/muhammetyucedag/.nuget/packages/system.reflection.metadata/1.6.0/system.reflection.metadata.1.6.0.nupkg.sha512"
+    "/Users/muhammetyucedag/.nuget/packages/system.reflection.metadata/1.6.0/system.reflection.metadata.1.6.0.nupkg.sha512",
+    "/Users/muhammetyucedag/.nuget/packages/system.security.cryptography.protecteddata/4.4.0/system.security.cryptography.protecteddata.4.4.0.nupkg.sha512"
   ],
   "logs": []
 }
