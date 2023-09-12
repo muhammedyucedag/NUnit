@@ -34,6 +34,8 @@ public class ApplicationEvaluateUnitTest
       
       // Arrange
       var mockValidator = new Mock<IIdentityValidator>(); // böyle bir interface varmış gibi (fake class)
+      mockValidator.DefaultValue = DefaultValue.Mock;
+      mockValidator.Setup(i => i.CountryDataProvider.CountryData.Country).Returns("TURKEY");
       mockValidator.Setup(i => i.IsValid(It.IsAny<string>())).Returns(true); // IIdentityValidator çağrılırsa geriye true döneceğiz
       
       var evaluator = new AppliactaionEvaluator(mockValidator.Object);
@@ -57,6 +59,8 @@ public class ApplicationEvaluateUnitTest
       
       // Arrange
       var mockValidator = new Mock<IIdentityValidator>(); // böyle bir interface varmış gibi (fake class)
+      mockValidator.DefaultValue = DefaultValue.Mock;
+      mockValidator.Setup(i => i.CountryDataProvider.CountryData.Country).Returns("TURKEY");
       mockValidator.Setup(i => i.IsValid(It.IsAny<string>())).Returns(true); // IIdentityValidator çağrılırsa geriye true döneceğiz
       
       var evaluator = new AppliactaionEvaluator(mockValidator.Object);
@@ -81,6 +85,8 @@ public class ApplicationEvaluateUnitTest
       
       // Arrange
       var mockValidator = new Mock<IIdentityValidator>(); // böyle bir interface varmış gibi (fake class)
+      mockValidator.DefaultValue = DefaultValue.Mock;
+      mockValidator.Setup(i => i.CountryDataProvider.CountryData.Country).Returns("TURKEY");
       mockValidator.Setup(i => i.IsValid(It.IsAny<string>())).Returns(false); // IIdentityValidator çağrılırsa geriye true döneceğiz
       
       var evaluator = new AppliactaionEvaluator(mockValidator.Object);
@@ -94,5 +100,27 @@ public class ApplicationEvaluateUnitTest
       
       // Assert
       Assert.That(appResult, Is.EqualTo(ApplicationResult.TransferredToHR));
+   }
+   
+   [Test]
+   public void Application_WithOfficeLocation_TransferredToCTO()
+   {
+      // %75 oranında benzerlik yakaladık ve otomatik bir şekilde kabul ettik
+      
+      // Arrange
+      var mockValidator = new Mock<IIdentityValidator>(); // böyle bir interface varmış gibi (fake class)
+      mockValidator.Setup(i => i.CountryDataProvider.CountryData.Country).Returns("SPAIN");
+
+      var evaluator = new AppliactaionEvaluator(mockValidator.Object);
+      var form = new JobApplicationlibrary.Models.JobApplication
+      {
+         Applicant = new Applicant{ Age = 19}
+      };
+      
+      // Action
+      var appResult = evaluator.Evaluate(form);
+      
+      // Assert
+      Assert.That(appResult, Is.EqualTo(ApplicationResult.TransferredToCTO));
    }
 }

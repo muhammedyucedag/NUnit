@@ -20,7 +20,9 @@ public class AppliactaionEvaluator
         if (form.Applicant.Age < minAge)
             return ApplicationResult.AutoRejected;
 
-        var connectionSucceed = _identityValidator.CheckConnectionToRemoteServer();
+        if (_identityValidator.CountryDataProvider.CountryData.Country != "TURKEY")
+            return ApplicationResult.TransferredToCTO;
+
         var validIdentity = _identityValidator.IsValid(form.Applicant.IdentityNumber);
         if (!validIdentity)
             return ApplicationResult.TransferredToHR;
