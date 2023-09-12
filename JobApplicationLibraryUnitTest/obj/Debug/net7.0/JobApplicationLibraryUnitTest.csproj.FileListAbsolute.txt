@@ -99,3 +99,8 @@
 /Users/muhammetyucedag/Desktop/Project/NUnit/JobApplicationLibraryUnitTest/bin/Debug/net7.0/CoverletSourceRootsMapping
 /Users/muhammetyucedag/Desktop/Project/NUnit/JobApplicationLibraryUnitTest/bin/Debug/net7.0/JobApplicationlibrary.dll
 /Users/muhammetyucedag/Desktop/Project/NUnit/JobApplicationLibraryUnitTest/bin/Debug/net7.0/JobApplicationlibrary.pdb
+/Users/muhammetyucedag/Desktop/Project/NUnit/JobApplicationLibraryUnitTest/bin/Debug/net7.0/Castle.Core.dll
+/Users/muhammetyucedag/Desktop/Project/NUnit/JobApplicationLibraryUnitTest/bin/Debug/net7.0/Moq.dll
+/Users/muhammetyucedag/Desktop/Project/NUnit/JobApplicationLibraryUnitTest/bin/Debug/net7.0/System.Diagnostics.EventLog.dll
+/Users/muhammetyucedag/Desktop/Project/NUnit/JobApplicationLibraryUnitTest/bin/Debug/net7.0/runtimes/win/lib/net6.0/System.Diagnostics.EventLog.Messages.dll
+/Users/muhammetyucedag/Desktop/Project/NUnit/JobApplicationLibraryUnitTest/bin/Debug/net7.0/runtimes/win/lib/net6.0/System.Diagnostics.EventLog.dll

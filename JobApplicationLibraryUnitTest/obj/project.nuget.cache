@@ -1,21 +1,24 @@
 {
   "version": 2,
-  "dgSpecHash": "1N71cRkrT1h1hC8CoGznzOieAOT9NP6uG9yTNuYX1hbThKxCBF6yspHgS9x34PK6foFqMa8JO1I6D2Kh3lgyAg==",
+  "dgSpecHash": "wWollEu7QQ/fyHAFqbDpxJbccx3ZcXQpbG6vlDT/f6Asdlrq5pmzbzqjaKdQ72GCkTO1kkO5GHgCqc+7dWTEOQ==",
   "success": true,
   "projectFilePath": "/Users/muhammetyucedag/Desktop/Project/NUnit/JobApplicationLibraryUnitTest/JobApplicationLibraryUnitTest.csproj",
   "expectedPackageFiles": [
+    "/Users/muhammetyucedag/.nuget/packages/castle.core/5.1.1/castle.core.5.1.1.nupkg.sha512",
     "/Users/muhammetyucedag/.nuget/packages/coverlet.collector/3.2.0/coverlet.collector.3.2.0.nupkg.sha512",
     "/Users/muhammetyucedag/.nuget/packages/microsoft.codecoverage/17.5.0/microsoft.codecoverage.17.5.0.nupkg.sha512",
     "/Users/muhammetyucedag/.nuget/packages/microsoft.net.test.sdk/17.5.0/microsoft.net.test.sdk.17.5.0.nupkg.sha512",
     "/Users/muhammetyucedag/.nuget/packages/microsoft.netcore.platforms/1.1.0/microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "/Users/muhammetyucedag/.nuget/packages/microsoft.testplatform.objectmodel/17.5.0/microsoft.testplatform.objectmodel.17.5.0.nupkg.sha512",
     "/Users/muhammetyucedag/.nuget/packages/microsoft.testplatform.testhost/17.5.0/microsoft.testplatform.testhost.17.5.0.nupkg.sha512",
+    "/Users/muhammetyucedag/.nuget/packages/moq/4.20.69/moq.4.20.69.nupkg.sha512",
     "/Users/muhammetyucedag/.nuget/packages/netstandard.library/2.0.0/netstandard.library.2.0.0.nupkg.sha512",
     "/Users/muhammetyucedag/.nuget/packages/newtonsoft.json/13.0.1/newtonsoft.json.13.0.1.nupkg.sha512",
     "/Users/muhammetyucedag/.nuget/packages/nuget.frameworks/5.11.0/nuget.frameworks.5.11.0.nupkg.sha512",
     "/Users/muhammetyucedag/.nuget/packages/nunit/3.13.3/nunit.3.13.3.nupkg.sha512",
     "/Users/muhammetyucedag/.nuget/packages/nunit.analyzers/3.6.1/nunit.analyzers.3.6.1.nupkg.sha512",
     "/Users/muhammetyucedag/.nuget/packages/nunit3testadapter/4.4.2/nunit3testadapter.4.4.2.nupkg.sha512",
+    "/Users/muhammetyucedag/.nuget/packages/system.diagnostics.eventlog/6.0.0/system.diagnostics.eventlog.6.0.0.nupkg.sha512",
     "/Users/muhammetyucedag/.nuget/packages/system.reflection.metadata/1.6.0/system.reflection.metadata.1.6.0.nupkg.sha512"
   ],
   "logs": []

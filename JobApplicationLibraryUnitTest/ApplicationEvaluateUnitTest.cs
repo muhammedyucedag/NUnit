@@ -1,5 +1,7 @@
 using JobApplication;
+using JobApplication.Services;
 using JobApplicationlibrary.Models;
+using Moq;
 
 namespace JobApplicationLibraryUnitTest;
 
@@ -9,7 +11,7 @@ public class ApplicationEvaluateUnitTest
    public void Application_WithUnderAge_TransferredToAutoReject()
    {
       // Arrange
-      var evaluator = new AppliactaionEvaluator();
+      var evaluator = new AppliactaionEvaluator(null);
       var form = new JobApplicationlibrary.Models.JobApplication()
       {
          Applicant = new Applicant()
@@ -31,10 +33,13 @@ public class ApplicationEvaluateUnitTest
       // %25 oranında bezerlik yakaladık ve otomatik reddettik
       
       // Arrange
-      var evaluator = new AppliactaionEvaluator();
-      var form = new JobApplicationlibrary.Models.JobApplication()
+      var mockValidator = new Mock<IIdentityValidator>(); // böyle bir interface varmış gibi (fake class)
+      mockValidator.Setup(i => i.IsValid(It.IsAny<string>())).Returns(true); // IIdentityValidator çağrılırsa geriye true döneceğiz
+      
+      var evaluator = new AppliactaionEvaluator(mockValidator.Object);
+      var form = new JobApplicationlibrary.Models.JobApplication
       {
-         Applicant = new Applicant{ Age = 19},
+         Applicant = new Applicant{ Age = 19, IdentityNumber = ""},
          TechStackList = new List<string> {""}
       };
       
@@ -51,7 +56,10 @@ public class ApplicationEvaluateUnitTest
       // %75 oranında benzerlik yakaladık ve otomatik bir şekilde kabul ettik
       
       // Arrange
-      var evaluator = new AppliactaionEvaluator();
+      var mockValidator = new Mock<IIdentityValidator>(); // böyle bir interface varmış gibi (fake class)
+      mockValidator.Setup(i => i.IsValid(It.IsAny<string>())).Returns(true); // IIdentityValidator çağrılırsa geriye true döneceğiz
+      
+      var evaluator = new AppliactaionEvaluator(mockValidator.Object);
       var form = new JobApplicationlibrary.Models.JobApplication
       {
          Applicant = new Applicant{ Age = 19},
@@ -64,5 +72,27 @@ public class ApplicationEvaluateUnitTest
       
       // Assert
       Assert.That(appResult, Is.EqualTo(ApplicationResult.AutoAccepted));
+   }
+   
+   [Test]
+   public void Application_WithInValidIdentityNumber_TransferredToAutoReject()
+   {
+      // %75 oranında benzerlik yakaladık ve otomatik bir şekilde kabul ettik
+      
+      // Arrange
+      var mockValidator = new Mock<IIdentityValidator>(); // böyle bir interface varmış gibi (fake class)
+      mockValidator.Setup(i => i.IsValid(It.IsAny<string>())).Returns(false); // IIdentityValidator çağrılırsa geriye true döneceğiz
+      
+      var evaluator = new AppliactaionEvaluator(mockValidator.Object);
+      var form = new JobApplicationlibrary.Models.JobApplication
+      {
+         Applicant = new Applicant{ Age = 19}
+      };
+      
+      // Action
+      var appResult = evaluator.Evaluate(form);
+      
+      // Assert
+      Assert.That(appResult, Is.EqualTo(ApplicationResult.TransferredToHR));
    }
 }

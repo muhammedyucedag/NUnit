@@ -8,21 +8,19 @@ public class AppliactaionEvaluator
     private const int minAge = 18;
     private const int autoAcceptedYearOfExperience = 15;
     private List<string> techStackList = new() {"C#", "RabbitMQ", "Microservice", "Visual Studio"};
-    private IdentitValidator identitValidator;
+    private readonly IIdentityValidator _identityValidator;
 
-    public AppliactaionEvaluator()
+    public AppliactaionEvaluator(IIdentityValidator identitValidator)
     {
-        identitValidator = new IdentitValidator();
+        _identityValidator = identitValidator;
     }
-
-
+    
     public ApplicationResult Evaluate(JobApplicationlibrary.Models.JobApplication form)
     {
-        // Yaş Kontrolü
         if (form.Applicant.Age < minAge)
             return ApplicationResult.AutoRejected;
 
-        var validIdentity = identitValidator.IsValid(form.Applicant.IdentityNumber);
+        var validIdentity = _identityValidator.IsValid(form.Applicant.IdentityNumber);
         if (!validIdentity)
             return ApplicationResult.TransferredToHR;
 
